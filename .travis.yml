@@ -18,10 +18,10 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   # docker tagging
-  - docker tag multi_client jphung2/multi_client
-  - docker tag multi_nginx jphung2/multi_nginx
-  - docker tag multi_server jphung2/multi_server
-  - docker tag multi_worker jphung2/multi_worker
+  - docker tag multi_client multi_client
+  - docker tag multi_nginx multi_nginx
+  - docker tag multi_server multi_server
+  - docker tag multi_worker multi_worker
 
   # push images to dockerhub
   - docker push multi_client
